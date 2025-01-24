@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cadastro Skoob</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Welcome to Elendel</h1>
+    <p id="description"> Sign up!
+     </p>
+<main>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name: <input id="name" type="text" min-leght="4" placeholder="name" required/></label>
+      <label for="email" id="email-label">Email: <input id="email" type="email" placeholder="email" required/></label>
+      <label for="age" id="number-label">Age: <input id="number" type="number" min="12" max="100" placeholder="number" required /></label>
+<label> Favorites Genres
+    <select id="dropdown">
+      <option value="1"> Fantasy </option>
+      <option value="2"> Fiction </option>
+      <option value="3"> Sci-fi </option>
+      <option value="4"> Romance </option>
+      <option value="5"> Thriller </option>
+    </select>
+  <label for="author"><input id="author" name="account-type" type="radio" class="inline" value="1" />Author</label>
+  <label for="reader"><input id="reader" name="account-type" type="radio" class="inline" value="2" checked/>Reader</label>
+  <p class="format"> Favorite format to read:
+  <label for="checkbox"> <input id="paperback" type="checkbox" value="paperback"/>Paperback</label>
+  <label for="checkbox"> <input id="ebook" type="checkbox" value="ebook"/>Ebook</label>
+  <label for="checkbox"> <input id="Hardcover" type="checkbox" value="hardcover"/>Hardcover</label>
+  <label for="checkbox"> <input id="audiobook" type="checkbox" value="audiobook"/>Audiobook</label>
+  <textarea id="favorite-book"></textarea>
+  <button type="submit" id="submit">Submit</button>
+    </form>
+    </main>
+  </body>

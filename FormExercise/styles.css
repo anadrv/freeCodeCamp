@@ -6,8 +6,7 @@ body {
     padding: 0px;
     background-color:white;
     color: #77BDC3;
-    
-    font-family: verdana;
+    font-family: arial;
   }
   
   h1, p {
@@ -30,12 +29,35 @@ body {
   label {
       display: block;
       margin: 0.5rem 0;
+      text-align: left;
     }
   
-    input {
-      border-radius: 4px;
+    input.text, select {
+      border-radius: 4px; 
+      margin: 10px 0 0 0;
+      width: 100%;  
+      min-height: 2em;
     }
-  p.format {
+  
+   
+  p.format, p.textarea, p.person {
     text-align: left;
-    
+  
   }
+  
+  textarea {
+    width: 100%;
+  border-radius: 5px;
+  }
+  
+  button { 
+    display: block;
+    background-color: white;
+    border-radius: 5px;
+    width: 100px;
+    min-height: 2em;
+    text-align: center;
+  
+  }
+  
+  

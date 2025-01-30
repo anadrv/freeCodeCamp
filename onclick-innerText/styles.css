@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+    margin: 0;            
+}
+
+
+h1#teste {
+    text-align: center;
+    color: blueviolet;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 0;           
+}
+
+
+button {
+
+    display: block;         
+    margin: 0 auto;       
+    width: 100px;           
+    height: 25px;            
+    background-color: cadetblue;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+}
+
+
+button:hover {
+    background-color: aliceblue;
+    color: cadetblue;
+}

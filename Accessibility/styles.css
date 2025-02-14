@@ -43,3 +43,15 @@ h2 {
 h2 {
   border-bottom: 4px solid #dfdfe2;
 }
+
+
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

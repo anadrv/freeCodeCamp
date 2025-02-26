@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#planeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    background: linear-gradient(90deg, #1672bd 20%, #51a6d4 50%);
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    animation: brilhar 2s infinite alternate;
+    position: relative;
+    z-index: 1;
+}
+
+.anel {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    animation: girar 10s linear infinite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: inset(30% 0 0 0); 
+    z-index: 2;
+}
+
+@keyframes brilhar {
+    0%, 100% {
+        box-shadow: 0 0 10px 5px #6276c480;
+    }
+    50% {
+        box-shadow: 0 0 20px 10px #1672bd;
+    }
+
+}
+
+.planeta-nome {
+    color: rgb(249, 249, 
+    249);
+    font-size: 1rem;
+    font-family: "EB Garamond", serif;
+    font-stretch: narrower;
+    letter-spacing: 2px;
+    position: absolute;
+    top: -40%;
+    opacity: 0;
+    transition: ocpacity 0.5s;
+    
+}
+
+#planeta:hover .planeta-nome {
+    opacity: 1;
+    transition: 0.6s;
+
+}
+
+.quadro {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ffffff;
+    top: 50%; 
+    left: calc(50% + 100px); 
+    transform: translateY(-50%); 
+    z-index: 0;
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -22,7 +22,7 @@ body {
     align-items: center;
 }
 
-#planeta {
+.planeta {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,17 +53,15 @@ body {
 
 @keyframes brilhar {
     0%, 100% {
-        box-shadow: 0 0 10px 5px #6276c480;
+        box-shadow: 0 0 10px 5px #1D9BCC;
     }
     50% {
-        box-shadow: 0 0 20px 10px #1672bd;
+        box-shadow: 0 0 20px 10px #1dc3cc;
     }
-
 }
 
-.planeta-nome {
-    color: rgb(249, 249, 
-    249);
+.planeta-nome-scandrial {
+    color: rgb(249, 249, 249);
     font-size: 1rem;
     font-family: "EB Garamond", serif;
     font-stretch: narrower;
@@ -71,27 +69,71 @@ body {
     position: absolute;
     top: -40%;
     opacity: 0;
-    transition: ocpacity 0.5s;
-    
+    transition: opacity 0.5s;
 }
 
-#planeta:hover .planeta-nome {
+.planeta:hover .planeta-nome-scandrial {
     opacity: 1;
     transition: 0.6s;
+}
 
+.planeta-roshar {
+    background: linear-gradient(90deg, #692b6d 20%, #AB43B2 50%);
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    animation: brilho-roshar 2s infinite alternate;
+    position: absolute; 
+    top: 120px; 
+    left: 150px; 
+}
+
+@keyframes brilho-roshar {
+    0%, 100% {
+        box-shadow: 0 0 10px 5px #692b6d;
+    }
+    50% {
+        box-shadow: 0 0 20px 10px #d4518c;
+    }
+}
+
+.planeta-nome-roshar {
+    color: rgb(249, 249, 249);
+    font-size: 1rem;
+    font-family: "EB Garamond", serif;
+    font-stretch: narrower;
+    letter-spacing: 2px;
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.planeta-roshar:hover .planeta-nome-roshar {
+    opacity: 1;
+    transition: 0.6s;
 }
 
 .quadro {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border: 1px solid #ffffff;
-    top: 50%; 
-    left: calc(50% + 100px); 
-    transform: translateY(-50%); 
-    z-index: 0;
-    color: white; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: rgb(249, 249, 249);
+    font-size: 1rem;
+    font-family: "EB Garamond", serif;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    margin: 40px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    position: absolute; /* Adiciona esta linha */
+    top: 100%; /* Ajusta a posição conforme necessário */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, 0); /* Ajusta a posição para o centro */
 }
+
+.planeta:hover .quadro {
+    opacity: 1;
+    transition: 0.6s;
+}
+

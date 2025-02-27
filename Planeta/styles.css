@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -13,6 +15,26 @@ body {
     align-items: center;
     height: 100vh;
     background-color: black;
+    background-image: url('/Planeta/bd8bd566c03a80a53e4b047ffb2e7d2b.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+#titulo {
+    color: rgb(249, 249, 249);
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: absolute; 
+    bottom: 10%; 
+    left: 20%; 
+    text-shadow: #b20ddc 0 0 10px;
+    transform: translate(-50%, 0);
+ 
 }
 
 .container {
@@ -23,15 +45,15 @@ body {
 }
 
 .planeta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ 
     background-color: blue;
     background: linear-gradient(90deg, #1672bd 20%, #51a6d4 50%);
     color: #fff;
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    top: 227px;
+    left: -91px;
     animation: brilhar 2s infinite alternate;
     position: relative;
     z-index: 1;
@@ -85,8 +107,8 @@ body {
     border-radius: 50%;
     animation: brilho-roshar 2s infinite alternate;
     position: absolute; 
-    top: 120px; 
-    left: 150px; 
+    top: 110px; 
+    left: 757px; 
 }
 
 @keyframes brilho-roshar {
@@ -121,19 +143,114 @@ body {
     font-size: 1rem;
     font-family: "EB Garamond", serif;
     padding: 10px;
+    width: 250px;
     border-radius: 10px;
     border: 1px solid #fff;
     margin: 40px;
     opacity: 0;
     transition: opacity 0.5s;
-    position: absolute; /* Adiciona esta linha */
-    top: 100%; /* Ajusta a posição conforme necessário */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, 0); /* Ajusta a posição para o centro */
+    position: absolute; 
+    left: -10%; 
+    transform: translate(40%, 0); 
+    text-align: justify;
 }
 
 .planeta:hover .quadro {
     opacity: 1;
     transition: 0.6s;
 }
+
+.lua {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(225, 225, 225);
+    border-radius: 50%;
+    position: absolute;
+
+}
+
+.lua1 {
+    top: -30px;
+    left: 10%;
+    transform: translateX(-50%);
+}
+
+.lua2 {
+    top: 90%;
+    left: -30px;
+    transform: translateY(-50%);
+}
+
+.lua3 {
+    top: 50%;
+    right: -35px;
+    transform: translateY(-50%);
+}
+
+.planeta-sel {
+    background: linear-gradient(90deg, #692b6d 20%, #AB43B2 50%);
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    animation: brilho-sel 2s infinite alternate;
+    position: absolute; 
+    top: 135px; 
+    left: 245px; 
+}
+
+@keyframes brilho-sel {
+    0%, 100% {
+        box-shadow: 0 0 10px 5px #692b6d;
+    }
+    50% {
+        box-shadow: 0 0 20px 10px #d4518c;
+    }
+}
+
+.planeta-nome-nalthis {
+    color: rgb(249, 249, 249);
+    font-size: 1rem;
+    font-family: "EB Garamond", serif;
+    font-stretch: narrower;
+    letter-spacing: 2px;
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transition: opacity 0.5s;
+}
+
+.planeta-nalthis {
+    background: linear-gradient(90deg, #4d9ab0 20%, #97cee8 50%);
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    animation: brilho-nalthis 2s infinite alternate;
+    position: absolute; 
+    top: 135px; 
+    left: 245px; 
+}
+
+@keyframes brilho-nalthis {
+    0%, 100% {
+        box-shadow: 0 0 10px 5px #4d9ab0;
+    }
+    50% {
+        box-shadow: 0 0 20px 10px #97cee8;
+    }
+}
+
+.planeta-nome-nalthis {
+    color: rgb(249, 249, 249);
+    font-size: 1rem;
+    font-family: "EB Garamond", serif;
+    font-stretch: narrower;
+    letter-spacing: 2px;
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transition: opacity 0.5s;
+}
+
 

@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -15,12 +14,10 @@ body {
     align-items: center;
     height: 100vh;
     background-color: black;
-    background-image: url('/Planeta/bd8bd566c03a80a53e4b047ffb2e7d2b.jpg'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
     position: relative;
-
 }
 
 #titulo {
@@ -34,7 +31,6 @@ body {
     left: 20%; 
     text-shadow: #b20ddc 0 0 10px;
     transform: translate(-50%, 0);
- 
 }
 
 .container {
@@ -45,21 +41,19 @@ body {
 }
 
 .planeta {
- 
-    background-color: blue;
-    background: linear-gradient(90deg, #1672bd 20%, #51a6d4 50%);
+    background: linear-gradient(90deg, #bd5916 20%, #ef7529);
     color: #fff;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     top: 227px;
-    left: -91px;
+    left: -112px;
     animation: brilhar 2s infinite alternate;
     position: relative;
     z-index: 1;
 }
 
-.anel {
+/*.anel {
     position: absolute;
     width: 100px;
     height: 20px;
@@ -71,14 +65,15 @@ body {
     transform: translate(-50%, -50%);
     clip-path: inset(30% 0 0 0); 
     z-index: 2;
-}
+}*/
+
 
 @keyframes brilhar {
     0%, 100% {
-        box-shadow: 0 0 10px 5px #1D9BCC;
+        box-shadow: 0 0 10px 5px #bd5916;
     }
     50% {
-        box-shadow: 0 0 20px 10px #1dc3cc;
+        box-shadow: 0 0 20px 10px #ef7529;
     }
 }
 
@@ -166,45 +161,45 @@ body {
     background-color: rgb(225, 225, 225);
     border-radius: 50%;
     position: absolute;
-
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra às luas */
 }
 
 .lua1 {
     top: -30px;
-    left: 10%;
+    left: 50%;
     transform: translateX(-50%);
 }
 
 .lua2 {
-    top: 90%;
+    top: 50%;
     left: -30px;
     transform: translateY(-50%);
 }
 
 .lua3 {
     top: 50%;
-    right: -35px;
+    right: -30px;
     transform: translateY(-50%);
 }
 
-.planeta-sel {
-    background: linear-gradient(90deg, #692b6d 20%, #AB43B2 50%);
+.planeta-nalthis {
+    background: linear-gradient(90deg, #2a612f 20%, #2dc861 50%);
     color: #fff;
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
-    animation: brilho-sel 2s infinite alternate;
+    animation: brilho-nalthis 2s infinite alternate;
     position: absolute; 
-    top: 135px; 
-    left: 245px; 
+    top: 49px; 
+    left: 102px; 
 }
 
-@keyframes brilho-sel {
+@keyframes brilho-nalthis {
     0%, 100% {
-        box-shadow: 0 0 10px 5px #692b6d;
+        box-shadow: 0 0 10px 5px #2a612f;
     }
     50% {
-        box-shadow: 0 0 20px 10px #d4518c;
+        box-shadow: 0 0 20px 10px #2dc861;
     }
 }
 
@@ -220,19 +215,20 @@ body {
     transition: opacity 0.5s;
 }
 
-.planeta-nalthis {
+
+.planeta-yolen {
     background: linear-gradient(90deg, #4d9ab0 20%, #97cee8 50%);
     color: #fff;
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    animation: brilho-nalthis 2s infinite alternate;
+    animation: brilho-yolen 2s infinite alternate;
     position: absolute; 
     top: 135px; 
     left: 245px; 
 }
 
-@keyframes brilho-nalthis {
+@keyframes brilho-yolen {
     0%, 100% {
         box-shadow: 0 0 10px 5px #4d9ab0;
     }
@@ -241,7 +237,7 @@ body {
     }
 }
 
-.planeta-nome-nalthis {
+.planeta-nome-yolen {
     color: rgb(249, 249, 249);
     font-size: 1rem;
     font-family: "EB Garamond", serif;

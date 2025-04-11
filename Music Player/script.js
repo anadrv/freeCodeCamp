@@ -109,7 +109,6 @@ const pauseSong = () => {
 };
 
 const playNextSong = () => {
-
   if (userData?.currentSong === null) {
     playSong(userData?.songs[0].id);
   } else {
@@ -121,6 +120,18 @@ const playNextSong = () => {
 };
 
 const playPreviousSong = () => {
+   if (userData?.currentSong === null) return;
+   else {
+    const currentSongIndex = getCurrentSongIndex();
+    const previousSong = userData?.songs[currentSongIndex - 1];
+
+    playSong(previousSong.id);
+   }
+};
+
+const highlightCurrentSong = () => {
+  const playlistSongElements = document.querySelectorAll(".playlist-song");
+  
   
 };
 
@@ -160,14 +171,18 @@ pauseButton.addEventListener("click",  pauseSong);
 
 nextButton.addEventListener("click", playNextSong);
 
+previousButton.addEventListener("click", playPreviousSong);
+
 const sortSongs = () => {
   userData?.songs.sort((a,b) => {
     if (a.title < b.title) {
       return -1;
     }
+
     if (a.title > b.title) {
       return 1;
     }
+
     return 0;
   });
 

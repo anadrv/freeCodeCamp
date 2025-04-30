@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #EBEBEB
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.text {
+    width: 35vw;
+    height: 70vh;
+    border-radius: 10px 0px 0px 10px;
+    background-color:#235084;
+    padding: 10px;
+    text-align: center;
+}
+
+.image {
+    width: 20vw;
+    height: 70vh;
+    background: url(/Javascript/Palindrome/014c8c7ff86747c0705f0fa7780dc6e6.jpg) no-repeat center center;
+    background-size: cover;
+    border-radius: 0px 10px 10px 0px;
+
+}

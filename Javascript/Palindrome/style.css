@@ -19,6 +19,11 @@ body {
 }
 
 .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
   width: 35vw;
   height: 70vh;
   border-radius: 10px 0px 0px 10px;
@@ -33,14 +38,6 @@ body {
   background: url(/Javascript/Palindrome/enter.jpg) no-repeat center center;
   background-size: cover;
   border-radius: 0px 10px 10px 0px;
-}
-
-.text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10%;
 }
 
 h1 {
@@ -87,7 +84,7 @@ h1 {
 }
 
 #check-btn:hover {
-    background-color: #000000;
+  background-color: #000000;
 }
 
 #check-btn.btn-palindrome {

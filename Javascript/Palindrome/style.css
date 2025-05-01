@@ -83,11 +83,27 @@ h1 {
   font-family: "Afacad", sans-serif;
   cursor: pointer;
   margin-left: 2%;
+  transition: background-color 0.3s ease;
 }
 
 #check-btn:hover {
-  background-color: #e9e6d3;
-  color: #235084;
+    background-color: #000000;
+}
+
+#check-btn.btn-palindrome {
+  background-color: #083d5c;
+}
+
+#check-btn.btn-not-palindrome {
+  background-color: #1c2a47;
+}
+
+#check-btn.btn-palindrome:hover {
+  background-color: #000000;
+}
+
+#check-btn.btn-not-palindrome:hover {
+  background-color: #000000;
 }
 
 h3 {

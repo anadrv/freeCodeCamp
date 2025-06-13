@@ -10,19 +10,21 @@
 
 header img {
     width: 100%;
-    height: 100vh;
+    height: auto;
     object-fit: cover;
 }
 
 main {
-    width: 70%;
-    margin: 20px auto;
+    width: 50%;
+    margin: -100px auto;
     display: flex;
+
+
 }
 
 aside {
     position: sticky;
-    top: 100px;
+    top: 90px;
     align-self: flex-start;
     margin-right: 50px;
 
@@ -53,6 +55,25 @@ li {
     margin: 15px 0;
 }
 
+
+
 #ocean {
     display: flex;
+    margin-top: 15px;
+    text-align: justify;
+    gap: 50px;
+    align-items: start;
 }
+
+#ocean p{
+    width: 50%;
+}
+
+
+#ocean img{
+    width: 50%;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+

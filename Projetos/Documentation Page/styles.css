@@ -1,79 +1,169 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inconsolata:wght@200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inconsolata:wght@200..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #ECF0F1;
-    font-family: "Inconsolata", monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ecf0f1;
+  font-family: "Inconsolata", monospace;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 header img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 main {
-    width: 50%;
-    margin: -100px auto;
-    display: flex;
-
-
+  width: 55%;
+  margin: -100px auto;
+  display: flex;
 }
 
 aside {
-    position: sticky;
-    top: 90px;
-    align-self: flex-start;
-    margin-right: 50px;
-
+  position: sticky;
+  top: 90px;
+  align-self: flex-start;
+  margin-right: 50px;
 }
 
 aside ul {
-    list-style: none;
+  list-style: none;
 }
-
+li {
+  margin: 15px 0;
+}
 a {
-    text-decoration: none;
-    background-color: #3E7BB4;
-    border-radius: 10px;
-    color: white;
-    letter-spacing: 4px;
-    display: block;
-    padding: 12px 20px; 
-    text-align: center;      
-    width:150px;      
-    transition: background-color 0.3s;
+  text-decoration: none;
+  background-color: #3e7bb4;
+  border-radius: 10px;
+  color: white;
+  letter-spacing: 4px;
+  display: block;
+  padding: 12px 20px;
+  text-align: center;
+  width: 150px;
+  transition: background-color 0.3s;
 }
 
 a:hover {
-    background-color: #2f5e86;
+  background-color: #2f5e86;
 }
-
-li {
-    margin: 15px 0;
-}
-
-
 
 #ocean {
-    display: flex;
-    margin-top: 15px;
-    text-align: justify;
-    gap: 50px;
-    align-items: start;
+  display: flex;
+  margin-top: 15px;
+  text-align: justify;
+  gap: 50px;
+  align-items: start;
 }
 
-#ocean p{
-    width: 50%;
+#ocean p {
+  width: 50%;
+  line-height: 1.2rem;
 }
 
-
-#ocean img{
-    width: 50%;
-    height: 290px;
-    object-fit: cover;
-    border-radius: 10px;
+#ocean img {
+  width: 50%;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
+#turtles {
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.turtles__image {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 60%;
+}
+
+.turtles_img {
+  height: 50%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.text {
+  line-height: 1.2rem;
+  text-align: justify;
+}
+
+.turtles__text h1 {
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  text-align: right;
+  letter-spacing: 1px;
+}
+
+#sharks {
+  margin-top: -230px;
+  display: flex;
+  gap: 50px;
+  align-items: end;
+}
+
+.sharks__text {
+  width: 45%;
+}
+
+.sharks__text h1 {
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.sharks__images img {
+  width: 100%;
+}
+
+#whales {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+#whales h1 {
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-align: right;
+}
+
+.whales__images {
+  display: flex;
+  gap: 15px;
+}
+
+.whales__images img {
+  border-radius: 10px;
+  width: 49%;
+}
+
+.whales__text {
+  margin: 30px 0;
+}
+
+#fish h1 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.fish__text-image {
+  display: flex;
+  gap: 50px;
+  align-items: end;
+}

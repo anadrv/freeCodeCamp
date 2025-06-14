@@ -167,3 +167,19 @@ a:hover {
   gap: 50px;
   align-items: end;
 }
+
+#jellyfish h1 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin: 50px 0;
+  text-align: right;
+}
+
+.jellyfish__text-image {
+    display: flex;
+  gap: 50px;
+}
+
+.jellyfish__text-image img {
+    height: 650px
+}

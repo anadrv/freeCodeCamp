@@ -4,14 +4,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #ecf0f1;
-  font-family: "Inconsolata", monospace;
+
 }
 
 body {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  background-color: #ecf0f1;
+  font-family: "Inconsolata", monospace;
+  flex: 1;
 }
 
 header img {
@@ -168,6 +169,7 @@ a:hover {
   align-items: end;
 }
 
+
 #jellyfish h1 {
   font-size: 1.5rem;
   letter-spacing: 1px;
@@ -176,10 +178,79 @@ a:hover {
 }
 
 .jellyfish__text-image {
-    display: flex;
+display: flex;
   gap: 50px;
 }
 
 .jellyfish__text-image img {
     height: 650px
+}
+
+
+#seaotters {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+#seaotters h1 {
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.seaotters__images {
+  display: flex;
+  gap: 15px;
+}
+
+.seaotters__images img {
+  border-radius: 10px;
+  width: 49%;
+}
+
+.seaotters__text {
+  margin: 30px 0;
+}
+
+#seahorse h1 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin: 20px 0;
+  text-align: right;
+}
+
+.seahorse__text-image {
+  display: flex;
+  gap: 50px;
+  align-items: end;
+}
+
+.seahorse__text-image p {
+  width:50%;
+}
+
+.seahorse__text-image img {
+  width:50%;
+}
+
+hr {
+    margin: 50px 0;
+}
+
+.the-end {
+    margin-top: 50px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+
+footer {
+    margin-top: 150px;
+    background-color: #2f5e86;
+    padding: 10px;
+    text-align: center;
+    color: #ecf0f1;
+
 }

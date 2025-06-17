@@ -18,6 +18,7 @@
 html {
     width: 100%;
     background-color: var(--color-background);
+    overflow-x: hidden;
 }
 
 body {
@@ -29,7 +30,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0;
+    padding: 40px 10px;
+    position: fixed;
+    z-index: 10;
+    width: 70%;
+    background-color: var(--color-background);
 }
 
 .nav-link {
@@ -44,6 +49,10 @@ body {
 .nav-link:hover {
     color: var(--color-background);
     background-color: var(--color-text);
+}
+
+main {
+    padding-top: 100px;
 }
 
 #cover {
@@ -62,30 +71,40 @@ body {
 }
 
 .cover__images img:first-of-type {
-    width: 65%;
+    width: 64%;
     height:65vh;
     object-fit: cover;
     animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .cover__images img:last-of-type {
-    width: 35%;
+    width: 34%;
     height:65vh;
     object-fit: cover;
     animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
-.cover__title {
+.cover__title h1{
     color: var(--color-text);
-    width: 100%;
-    font-size:8.7rem;
+    max-width: 1700px;
+    font-size:9rem;
     letter-spacing: 5px;
     font-family: var(--font-primary);
     margin: -46px;
     display: inline-block;
     transform: scaleY(1.1);
+    font-weight:200;
 }
+
+.cover__paragraph {
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 50px 0;
+}
+
 
 @keyframes slide-in-left {
   0% {

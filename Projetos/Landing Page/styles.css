@@ -30,7 +30,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 10px;
+    padding: 40px 10px 20px 10px;
     position: fixed;
     z-index: 10;
     width: 70%;
@@ -103,7 +103,7 @@ main {
     font-family: var(--font-primary);
     font-size: 1.2rem;
     text-align: justify;
-    margin: 50px 0;
+    margin: 80px 0;
 }
 
 #members {
@@ -164,6 +164,42 @@ main {
 
 .member:hover .overlay {
   opacity: 1;
+}
+
+/*HEROES*/
+
+#heroes {
+    margin-bottom: 50px;
+}
+
+.heroes__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.heroes__images img:first-of-type {
+    width: 450px;
+    height:70vh;
+    object-fit: cover;
+    animation: slide-in-left 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.heroes__images img:last-of-type {
+    width: 600px;
+    height:70vh;
+    object-fit: cover;
+    animation: slide-in-right 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.heroes__phrase {
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    font-size: 6rem;
+    font-weight: lighter;
+    text-align: right;
+    margin-bottom: -30px;
 }
 
 

@@ -19,6 +19,7 @@ html {
     width: 100%;
     background-color: var(--color-background);
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {

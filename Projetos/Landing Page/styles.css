@@ -110,12 +110,13 @@ main {
     margin-bottom: 50px;
 }
 
-#members h2 {
+#members h2, .discography__title {
     color: var(--color-text);
     font-family: var(--font-primary);
     font-weight:lighter;
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 20px;
+    letter-spacing: 2px;
 }
 
 .members__img {
@@ -169,11 +170,12 @@ main {
 /*HEROES*/
 
 #heroes {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .heroes__images {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -183,14 +185,14 @@ main {
     width: 450px;
     height:70vh;
     object-fit: cover;
-    animation: slide-in-left 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
 }
 
 .heroes__images img:last-of-type {
     width: 600px;
     height:70vh;
     object-fit: cover;
-    animation: slide-in-right 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-right 1.2s 
 }
 
 .heroes__phrase {
@@ -200,6 +202,44 @@ main {
     font-weight: lighter;
     text-align: right;
     margin-bottom: -30px;
+}
+
+/*DISCOGRAPHY*/
+
+
+.discography__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.discography__card img{
+    width: 330px;
+    object-fit: cover;
+} 
+
+.discography__card {
+    font-size: 1.1rem;
+    color: var(--color-text);
+    font-family: var(--font-secondary);
+    margin-bottom: 60px;
+}
+
+.discography__card h6{
+    font-weight: 500;
+    text-decoration: underline;
+    font-size: 1.1rem;
+
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #ecf0f1;
+    font-family: var(--font-primary);
+    font-size: 1.1rem;
 }
 
 
@@ -263,6 +303,21 @@ main {
     transform: scaleY(1.1);
     line-height: 3.5rem;
     
+}
+
+.heroes__images img:first-of-type, .heroes__images img:last-of-type {
+    width: 450px;
+    height: 50vh;
+}
+
+#discography h2 {
+    text-align: center;
+    margin: 0px 0 80px 0;
+}
+
+.discography__cards {
+    justify-content: center;
+
 }
 }
 

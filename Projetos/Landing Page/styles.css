@@ -240,6 +240,47 @@ main {
   transform: scale(1.02);
 }
 
+/*FORM*/
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 100px;
+}
+
+form {
+  display: flex;
+  align-items: end;
+  gap: 16px;
+}
+
+#submit {
+  font-family: var(--font-primary);
+  padding: 4px 8px;
+
+}
+
+#email {
+  font-family: var(--font-primary);
+  padding: 4px 0px;
+  width: 250px;
+}
+
+h3 {
+  color: var(--color-text);
+  font-family: var(--font-secondary);
+  font-weight: 300;
+  margin-top: 80px;
+}
+
+label {
+  color: var(--color-text);
+  font-family: var(--font-primary);
+  font-size: 1.2rem;
+}
+
 footer {
     padding: 20px;
     text-align: center;

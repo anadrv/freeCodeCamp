@@ -225,13 +225,19 @@ main {
     color: var(--color-text);
     font-family: var(--font-secondary);
     margin-bottom: 60px;
+    transition: transform 0.3s ease;
 }
 
 .discography__card h6{
     font-weight: 500;
     text-decoration: underline;
     font-size: 1.1rem;
+    margin-top: 10px;
 
+}
+
+.discography__card:hover img {
+  transform: scale(1.02);
 }
 
 footer {

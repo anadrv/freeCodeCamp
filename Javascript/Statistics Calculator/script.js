@@ -17,7 +17,10 @@ const getMode = (array) => {
   if (new Set(Object.values(counts)).size === 1) {
     return null;
   }
-  const highest = Object.keys(counts);
+  const highest = Object.keys(counts).sort(
+    (a, b) => counts[b] - counts[a]
+  )[0];
+
 }
 
 
@@ -32,4 +35,3 @@ const calculate = () => {
   document.querySelector("#mean").textContent = mean;
   document.querySelector("#median").textContent = median;
 }
-

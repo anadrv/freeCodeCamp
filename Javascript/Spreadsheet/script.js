@@ -1,4 +1,4 @@
-
+const range = (start, end) => Array(end - start + 1);
 
 window.onload = () => {
   const container = document.getElementById("container");

@@ -1,6 +1,6 @@
 export const Navbar = () => {
   return (
-    <nav class="navbar">
+    <nav className="navbar">
       <ul>
         <li className="nav-item">
           <a href='#'>Dashboard</a>
@@ -11,10 +11,9 @@ export const Navbar = () => {
         <li className="nav-item">
           <button aria-expanded="false">Apps</button>
           <ul className="sub-menu" aria-label="Apps">
-          <li></li>
-          <li></li>
-          <li></li>
-            
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Chat</a></li>
+            <li><a href="#">Email</a></li>
           </ul>
         </li>
       </ul>

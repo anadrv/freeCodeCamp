@@ -9,3 +9,14 @@ console.log(`My name is ${botName} and I live on ${botLocation}.`);
 console.log(`My favorite programming language is ${favoriteLanguage}.`);
 
 console.log(codingFact);
+
+codingFact = `LostAndFound - ${favoriteLanguage}`;
+
+console.log(codingFact);
+
+codingFact = `Supernatural - ${favoriteLanguage}`;
+
+console.log(codingFact);
+
+console.log(`It was fun sharing these facts with you. Goodbye! - ${botName} from ${botLocation}.`);
+

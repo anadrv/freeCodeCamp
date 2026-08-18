@@ -10,6 +10,7 @@ const exampleSentence = "I love cats and cats are so much fun!";
 console.log("Original sentence:");
 console.log(exampleSentence);
 
+//trocar em todos
 const dogsOnlySentence = exampleSentence.replaceAll("cats", "dogs");
 console.log("Replacing all occurrences of cats with dogs:");
 console.log(dogsOnlySentence);
